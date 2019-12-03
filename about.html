@@ -3,6 +3,13 @@
 	<head>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="bootstrap.css">
+
+		<style>
+			.galleria{ height: 700px; }
+		</style>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+		<script src="galleria/galleria.min.js"></script>
 	</head>
 	<body>
 		<div class="navbar navbar-inverse navbar-fixed-top">
@@ -12,17 +19,85 @@
 				</div>
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
+						<li><a href="/news.html">Новости</a></li>
+					</ul>
+					<ul class="nav navbar-nav">
+						<li><a href="/studentsAchievements.html">Достижения студентов</a></li>
+					</ul>
+					<ul class="nav navbar-nav">
 						<li><a href="/materials.html">Материалы</a></li>
 					</ul>
 					<ul class="nav navbar-nav">
-						<li><a href="/about.html">О сайте</a></li>
+						<li><a href="/about.html">Об авторе</a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
 		<div class="container body-content">
 			<div class="jumbotron">
-				<h1>О сайте</h1>
+				<h1>Об авторе</h1>
+			</div>
+
+			<h2>Квалификация</h2>
+			<div class="galleria">
+				<a href="pics/author/diploma_1.jpg">
+					<img src="pics/author/diploma_1.min.jpg">
+				</a>
+				<a href="pics/author/diploma_2.jpg">
+					<img src="pics/author/diploma_2.min.jpg">
+				</a>
+				<a href="pics/author/diploma_3.jpg">
+					<img src="pics/author/diploma_3.min.jpg">
+				</a>
+				<a href="pics/author/diploma_4.jpg">
+					<img src="pics/author/diploma_4.min.jpg">
+				</a>
+				<a href="pics/author/diploma_5.jpg">
+					<img src="pics/author/diploma_5.min.jpg">
+				</a>
+				<a href="pics/author/diploma_6.jpg">
+					<img src="pics/author/diploma_6.min.jpg">
+				</a>
+			</div>
+
+			<h2>Почетные грамоты и благодарственные письма</h2>
+			<div class="galleria">
+				<a href="pics/author/certificate_1.jpg">
+					<img src="pics/author/certificate_1.min.jpg">
+				</a>
+				<a href="pics/author/certificate_2.jpg">
+					<img src="pics/author/certificate_2.min.jpg">
+				</a>
+				<a href="pics/author/certificate_3.jpg">
+					<img src="pics/author/certificate_3.min.jpg">
+				</a>
+				<a href="pics/author/certificate_4.jpg">
+					<img src="pics/author/certificate_4.min.jpg">
+				</a>
+				<a href="pics/author/certificate_9.jpg">
+					<img src="pics/author/certificate_9.min.jpg">
+				</a>
+				<a href="pics/author/certificate_8.jpg">
+					<img src="pics/author/certificate_8.min.jpg">
+				</a>
+				<a href="pics/author/certificate_5.jpg">
+					<img src="pics/author/certificate_5.min.jpg">
+				</a>
+				<a href="pics/author/certificate_6.jpg">
+					<img src="pics/author/certificate_6.min.jpg">
+				</a>
+				<a href="pics/author/certificate_7.jpg">
+					<img src="pics/author/certificate_7.min.jpg">
+				</a>
+				<a href="pics/author/certificate_10.jpg">
+					<img src="pics/author/certificate_10.min.jpg">
+				</a>
+				<a href="pics/author/certificate_11.jpg">
+					<img src="pics/author/certificate_11.min.jpg">
+				</a>
+				<a href="pics/author/certificate_12.jpg">
+					<img src="pics/author/certificate_12.min.jpg">
+				</a>
 			</div>
 
 			<hr/>
@@ -34,5 +109,12 @@
 				</p>
 			</footer>
 		</div>
+
+		<script>
+			$(function() {
+				Galleria.loadTheme('galleria/galleria.folio.min.js');
+				Galleria.run('.galleria');
+			});
+		</script>
 	</body>
 </html>
