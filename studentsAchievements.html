@@ -3,6 +3,13 @@
 	<head>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="bootstrap.css">
+
+		<style>
+			.galleria{ height: 700px; }
+		</style>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+		<script src="galleria/galleria.min.js"></script>
 	</head>
 	<body>
 		<div class="navbar navbar-inverse navbar-fixed-top">
@@ -31,6 +38,22 @@
 				<h1>Достижения студентов</h1>
 			</div>
 
+			<div padding="0 100">
+				<div class="galleria">
+					<img src="pics/students/students_1.jpg">
+					<img src="pics/students/students_2.jpg">
+					<img src="pics/students/students_3.jpg">
+					<img src="pics/students/students_4.jpg">
+					<img src="pics/students/students_5.jpg">
+					<img src="pics/students/students_7.jpg">
+					<img src="pics/students/students_8.jpg">
+					<img src="pics/students/students_9.jpg">
+					<img src="pics/students/students_10.jpg">
+					<img src="pics/students/students_11.jpg">
+					<img src="pics/students/students_6.jpg">
+				</div>
+			</div>
+
 			<hr/>
 			<footer>
 				<p>
@@ -40,5 +63,12 @@
 				</p>
 			</footer>
 		</div>
+
+		<script>
+			$(function() {
+				Galleria.loadTheme('galleria/galleria.folio.js');
+				Galleria.run('.galleria');
+			});
+		</script>
 	</body>
 </html>
